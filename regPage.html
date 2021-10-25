@@ -23,16 +23,53 @@
 
     <!-- Navbar Start -->
     <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <div class="container mx-auto flex flex-wrap pt-5 flex-col md:flex-row items-center">
+            <img src="logo/Cxo Logo Final-01.png" width="100" alt="">
 
-                <span class="ml-3 text-xl">CXO Summit 2021</span>
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             </a>
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900">First Link</a>
-                <a class="mr-5 hover:text-gray-900">Second Link</a>
-                <a class="mr-5 hover:text-gray-900">Third Link</a>
-                <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+                <!--Open modal button 1-->
+                <div>
+                    <button id="buttonmodal"
+                        class="focus:outline-none p-2 font-bold bg-green-500 text-white bg-opacity-75 rounded-lg ring-4 ring-green-300"
+                        type="button">About CXO Summit 2021
+                    </button>
+                    <br>
+                    <span class="ml-3 text-xl">CXO Summit 2021</span>
+
+                </div>
+                <!-- modal button 1 end -->
+                
+                <!--Open modal button 2-->
+                <div id="modal"
+                    class="fixed z-10 top-0 left-0 w-screen h-screen flex items-center justify-center bg-blue-500 bg-opacity-50 transform scale-0 transition-transform duration-300">
+                    <!-- Modal content -->
+                    <div class="bg-white w-1/2 h-1/2 p-12">
+                        <!--Close modal button-->
+                        <button id="closebutton" type="button" class="focus:outline-none">
+                            <!-- Hero icon - close button -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                        <!-- Test content -->
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Minus placeat maiores repudiandae, error perferendis inventore
+                            aspernatur voluptatum omnis sint debitis!
+                        </p>
+                    </div>
+                </div>
+                <!-- modal button 1 end -->
+
+
+                <!-- <a class="mr-5 hover:text-gray-900">About CXO</a>
+                <a class="mr-5 hover:text-gray-900">Our Panel</a>
+                <a class="mr-5 hover:text-gray-900">Register as CXO</a>
+                <a class="mr-5 hover:text-gray-900">Register as Organization</a> -->
             </nav>
             <button
                 class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
@@ -53,7 +90,7 @@
                 <div class="rounded-t bg-white mb-0 px-6 py-6">
                     <div class="text-center flex justify-between">
                         <h6 class="text-blueGray-700 text-xl font-bold">
-                            My account
+                            Registration As CXO
                         </h6>
                         <button
                             class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"

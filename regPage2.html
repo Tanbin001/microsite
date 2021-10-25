@@ -23,16 +23,53 @@
 
     <!-- Navbar Start -->
     <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <div class="container mx-auto flex flex-wrap pt-5 flex-col md:flex-row items-center">
+            <img src="logo/Cxo Logo Final-01.png" width="100" alt="">
 
-                <span class="ml-3 text-xl">CXO Summit 2021</span>
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             </a>
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900">First Link</a>
-                <a class="mr-5 hover:text-gray-900">Second Link</a>
-                <a class="mr-5 hover:text-gray-900">Third Link</a>
-                <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+                <!--Open modal button 1-->
+                <div>
+                    <button id="buttonmodal"
+                        class="focus:outline-none p-2 font-bold bg-green-500 text-white bg-opacity-75 rounded-lg ring-4 ring-green-300"
+                        type="button">About CXO Summit 2021
+                    </button>
+                    <br>
+                    <span class="ml-3 text-xl">CXO Summit 2021</span>
+
+                </div>
+                <!-- modal button 1 end -->
+
+                <!--Open modal button 2-->
+                <div id="modal"
+                    class="fixed z-10 top-0 left-0 w-screen h-screen flex items-center justify-center bg-blue-500 bg-opacity-50 transform scale-0 transition-transform duration-300">
+                    <!-- Modal content -->
+                    <div class="bg-white w-1/2 h-1/2 p-12">
+                        <!--Close modal button-->
+                        <button id="closebutton" type="button" class="focus:outline-none">
+                            <!-- Hero icon - close button -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                        <!-- Test content -->
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Minus placeat maiores repudiandae, error perferendis inventore
+                            aspernatur voluptatum omnis sint debitis!
+                        </p>
+                    </div>
+                </div>
+                <!-- modal button 1 end -->
+
+
+                <!-- <a class="mr-5 hover:text-gray-900">About CXO</a>
+                <a class="mr-5 hover:text-gray-900">Our Panel</a>
+                <a class="mr-5 hover:text-gray-900">Register as CXO</a>
+                <a class="mr-5 hover:text-gray-900">Register as Organization</a> -->
             </nav>
             <button
                 class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
@@ -46,6 +83,7 @@
     </header>
     <!-- Navbar End -->
 
+    <!-- registration section -->
     <section class=" py-1 bg-blueGray-50">
         <div class="w-full lg:w-8/12 px-4 mx-auto mt-6">
             <div
@@ -64,7 +102,7 @@
                 </div>
                 <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
                     <form>
-                        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase text-center underline">
                             User Information
                         </h6>
                         <div class="flex flex-wrap">
@@ -72,51 +110,114 @@
                                 <div class="relative w-full mb-3">
                                     <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                                         htmlfor="grid-password">
-                                        Username
+                                        Name of Organization
                                     </label>
                                     <input type="text"
                                         class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="lucky.jesse">
+                                        placeholder="Full Name">
                                 </div>
                             </div>
                             <div class="w-full lg:w-6/12 px-4">
                                 <div class="relative w-full mb-3">
                                     <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                                         htmlfor="grid-password">
-                                        Email address
+                                        Organization Email address
                                     </label>
                                     <input type="email"
                                         class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="jesse@example.com">
+                                        placeholder="example@example.com">
                                 </div>
                             </div>
-                            <div class="w-full lg:w-6/12 px-4">
+                            <div class="w-full lg:w-12/12 px-4">
                                 <div class="relative w-full mb-3">
                                     <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                                         htmlfor="grid-password">
-                                        First Name
+                                        Sector</a>
                                     </label>
-                                    <input type="text"
-                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="Lucky">
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-6/12 px-4">
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                        htmlfor="grid-password">
-                                        Last Name
-                                    </label>
-                                    <input type="text"
-                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="Jesse">
+                                    <div class="block">
+                                        <div class="mt-2 grid grid-cols-3 pl-16">
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="1"
+                                                        checked>
+                                                    <span class="ml-2">Fintech & MFS</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="2">
+                                                    <span class="ml-2">Banking & Capital Market</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">Agriculture</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">Digital Commerce</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">Healthcare</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">Economy</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">Manufacturing & Retail</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">RMG</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">Women in Leadership</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">Women in Leadership</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">Education</span>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="inline-flex items-center">
+                                                    <input type="radio" class="form-radio" name="radio" value="3">
+                                                    <span class="ml-2">SDGs</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <hr class="mt-6 border-b-1 border-blueGray-300">
 
-                        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase text-center underline">
                             Contact Information
                         </h6>
                         <div class="flex flex-wrap">
@@ -124,70 +225,110 @@
                                 <div class="relative w-full mb-3">
                                     <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                                         htmlfor="grid-password">
-                                        Address
+                                        Organization Address
                                     </label>
                                     <input type="text"
                                         class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                        placeholder="Office Address">
                                 </div>
                             </div>
-                            <div class="w-full lg:w-4/12 px-4">
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                        htmlfor="grid-password">
-                                        City
-                                    </label>
-                                    <input type="email"
-                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="New York">
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-4/12 px-4">
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                        htmlfor="grid-password">
-                                        Country
-                                    </label>
-                                    <input type="text"
-                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="United States">
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-4/12 px-4">
+                            <div class="w-full lg:w-6/12 px-4">
                                 <div class="relative w-full mb-3">
                                     <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                                         htmlfor="grid-password">
                                         Postal Code
                                     </label>
-                                    <input type="text"
+                                    <input type="number"
                                         class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="Postal Code">
+                                        placeholder="Ex: 1221">
                                 </div>
                             </div>
+                            <div class="w-full lg:w-6/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                        htmlfor="grid-password">
+                                        City
+                                    </label>
+                                    <input type="text"
+                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        placeholder="Ex: Dhaka">
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-6/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                        htmlfor="grid-password">
+                                        Contact Number</label>
+                                    </label>
+                                    <input type="text"
+                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        placeholder="Ex: +880 1XXXXXXXXX">
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-6/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                        htmlfor="grid-password">
+                                        Date of Payment</label>
+                                    </label>
+                                    <input type="date"
+                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-12/12 px-4">
+                                <div class="relative w-full mb-3">
+                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                        htmlfor="grid-password">
+                                        Bkash Payment Transection ID</label>
+                                    </label>
+                                    <input type="text"
+                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        placeholder="Ex: TrxID XXXXXXXXXX">
+                                </div>
+                            </div>
+
                         </div>
 
                         <hr class="mt-6 border-b-1 border-blueGray-300">
 
                         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-                            About Me
+                            QnA
                         </h6>
                         <div class="flex flex-wrap">
                             <div class="w-full lg:w-12/12 px-4">
                                 <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2 underline"
                                         htmlfor="grid-password">
-                                        About me
+                                        Describe Your Organization's Best Industry Practices in Brief:
                                     </label>
                                     <textarea type="text"
                                         class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        rows="4"> A beautiful UI Kit and Admin for JavaScript &amp; Tailwind CSS. It is Freeand Open Source.</textarea>
+                                        rows="4" placeholder="Text Goes Here..."></textarea>
+                                </div>
+                                <div class="relative w-full mb-3">
+                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2 underline"
+                                        htmlfor="grid-password">
+                                        State Your Organization's Best Achievements in Brief: </label>
+                                    <textarea type="text"
+                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        rows="4" placeholder="Text Goes Here..."></textarea>
+                                </div>
+                                <div class="relative w-full mb-3">
+                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2 underline"
+                                        htmlfor="grid-password">
+                                        Describe Your Organization's Current Trajectory:
+                                        <textarea type="text"
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            placeholder="Text Goes Here..." rows="4"></textarea>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <footer class="relative  pt-8 pb-6 mt-2">
+
+            <!-- <footer class="relative  pt-8 pb-6 mt-2">
                 <div class="container mx-auto px-4">
                     <div class="flex flex-wrap items-center md:justify-between justify-center">
                         <div class="w-full md:w-6/12 px-4 mx-auto text-center">
@@ -200,10 +341,11 @@
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> -->
+
         </div>
     </section>
-
+    <!-- registration section -->
     <!-- Footer section -->
     <footer class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
